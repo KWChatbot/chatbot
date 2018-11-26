@@ -13,6 +13,6 @@ Front는 마음대로..
 
 # 참고
 [travis ci python](https://github.com/travis-ci/travis-ci/issues/9815)  
-[python tf](https://www.slideshare.net/healess/python-tensorflow-ai-chatbot)  
-[gensim](https://radimrehurek.com/gensim/)
-[konlpy](http://konlpy.org/ko/latest/)
+[python tf(Apache 2.0 License)](https://www.slideshare.net/healess/python-tensorflow-ai-chatbot)  
+[gensim(GPL License)](https://radimrehurek.com/gensim/)  
+[konlpy(LGPL License)](http://konlpy.org/ko/latest/)  
