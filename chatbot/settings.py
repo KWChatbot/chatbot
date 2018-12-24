@@ -25,7 +25,7 @@ SECRET_KEY = 'zuv4907#%isx2abxziz$=fx(bml3#)*5j^1@04616t6c#&w!ko'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,9 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
+    'chatterbot.ext.django_chatterbot',
 ]
 
 MIDDLEWARE = [
+    #CORS setting
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -123,6 +127,26 @@ STATIC_URL = '/static/'
 
 ### pagenation settings
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
+}
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = False 
+
+#CORS_ORIGIN_WHITELIST = ('localhost:8000')
+
+CSRF_COOKIE_SECURE = False
+
+CHATTERBOT = {
+    'name': 'Django ChatterBot Example',
+    'django_app_name': 'django_chatterbot',
+    'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
+    'training_data': [
+         'chatterbot.corpus.english.greetings',
+         #'chatterbot.corpus.korean.greetings',
+    ]
 }
