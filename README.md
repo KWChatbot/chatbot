@@ -28,4 +28,6 @@ Python으로 백 구현(Tensorflow)
 [gensim(GPL License)](https://radimrehurek.com/gensim/)  
 [konlpy(LGPL License)](http://konlpy.org/ko/latest/)  
 [DjangoRestFramework](https://www.django-rest-framework.org/tutorial/quickstart/)  
-[Chatterbot](https://chatterbot.readthedocs.io/en/stable/)  
+[Chatterbot](https://chatterbot.readthedocs.io/en/stable/)    
+
+[ChatBot 교육](https://event-us.kr/chatbothon/event/4039?fbclid=IwAR242Z5PckSrFAkC2VlrdCisniC0DB-RuwHT043d8-DGH-fiYqIWhV-q2NI)  
