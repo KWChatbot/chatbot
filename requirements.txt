@@ -2,6 +2,5 @@ django
 djangorestframework
 chatterbot
 tensorflow
-tensorflow-gpu
 gensim
 konlpy
