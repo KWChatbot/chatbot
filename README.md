@@ -8,7 +8,7 @@ chatbot with deep-learning
 ```
 git clone https://github.com/KWChatbot/chatbot.git  
 cd chatbot  
-pip install django djangorestframework chatterbot
+pip install -r requirements.txt
 python manage.py migrate django_chatterbot
 python manage.py train
 python manage.py runserver  
