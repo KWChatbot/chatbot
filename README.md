@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/KWChatbot/chatbot.svg?branch=master)](https://travis-ci.org/KWChatbot/chatbot)
+
 # chatbot
 chatbot with deep-learning
 
