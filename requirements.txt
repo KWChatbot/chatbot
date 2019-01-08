@@ -1,0 +1,6 @@
+django
+djangorestframework
+chatterbot
+tensorflow
+gensim
+konlpy
